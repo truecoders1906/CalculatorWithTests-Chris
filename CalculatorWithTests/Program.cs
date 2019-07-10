@@ -6,7 +6,8 @@ namespace CalculatorWithTests
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, world!");
+            
+            Console.WriteLine("What's up Chip?!");
         }
     }
 }
