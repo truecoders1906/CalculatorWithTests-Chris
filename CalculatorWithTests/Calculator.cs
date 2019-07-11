@@ -19,6 +19,9 @@ namespace CalculatorWithTests
         {
             return 0;
         }
-        public int Factor(decimal number1, decimal number2);
+        public int Factor(decimal number1, decimal number2)
+        {
+            return 0;
+        }
     }
 }
