@@ -10,7 +10,7 @@ namespace CalculatorTests
         [InlineData (10, 20, 30)]
         [InlineData(20, 30, 50)]
         [InlineData(30, 40, 70)]
-        public void AddNumbers(decimal number1, decimal number2, decimal expected)
+        public void AddNumbers(int number1, int number2, int expected)
         {
             // Arrange
             Calculator calculator = new Calculator();
@@ -23,10 +23,10 @@ namespace CalculatorTests
             Assert.Equal(expected, actual);
         }
         [Theory]
-        [InlineData (5, 3, 1)]
-        [InlineData(10, 8, 6)]
-        [InlineData(20, 18, 16)]
-        public void SubtractNumbers(decimal number1, decimal number2, decimal expected)
+        [InlineData (5, 3, 2)]
+        [InlineData(10, 8, 2)]
+        [InlineData(20, 18, 2)]
+        public void Subtract(int number1, int number2, int expected)
         {
             // Arrange
             Calculator calculator = new Calculator();
@@ -42,7 +42,7 @@ namespace CalculatorTests
         [InlineData (2, 4, 8)]
         [InlineData(4, 6, 24)]
         [InlineData(6, 8, 48)]
-        public void MultiplyNumbers (decimal number1, decimal number2, decimal expected)
+        public void MultiplyNumbers (int number1, int number2, int expected)
         {
             // Arrange
             Calculator calculator = new Calculator();
@@ -57,14 +57,14 @@ namespace CalculatorTests
         [Theory]
         [InlineData (100, 50, 2)]
         [InlineData (50, 25, 2)]
-        [InlineData (20, 0, 0)]
-        public void DivideNumbers (decimal number1, decimal number2, decimal expected)
+        [InlineData (20, 1, 20)]
+        public void DivideNumbers (int number1, int number2, int expected)
         {
             // Arrange
             Calculator calculator = new Calculator();
 
             // Act
-            int actual = calculator.Divide(number1, number2);
+            int actual = calculator.DivideNumbers(number1, number2);
 
 
             // Assert
@@ -74,7 +74,7 @@ namespace CalculatorTests
         [InlineData (5, 120)]
         [InlineData(6, 720)]
         [InlineData(7, 5040)]
-        public void FactorNumbers(decimal number1, decimal expected)
+        public void Factorial(int number1, int expected)
         {
             // Arrange
             Calculator calculator = new Calculator();

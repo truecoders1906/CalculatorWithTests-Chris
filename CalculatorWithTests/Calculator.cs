@@ -3,25 +3,25 @@ namespace CalculatorWithTests
 {
     public class Calculator
     {
-       public int Add(decimal number1, decimal number2)
+       public int Add(int number1, int number2)
         {
-            return 0;
+            return number1 + number2;
         } 
-        public int Subtract(decimal number1, decimal number2)
+        public int Subtract(int number1, int number2)
         {
-            return 0;
+            return number1 - number2;
         }
-        public int Multiply(decimal number1, decimal number2)
+        public int Multiply(int number1, int number2)
         {
-            return 0;
+            return number1 * number2;
         }
-        public int Divide(decimal number1, decimal number2)
+        public int DivideNumbers(int number1, int number2)
         {
-            return 0;
+            return number1 / number2;
         }
-        public int Factor(decimal number1, decimal number2)
+        public int Factorial(int number1)
         {
-            return 0;
+            return number1 * Factorial(number1 - 1);
         }
     }
 }
