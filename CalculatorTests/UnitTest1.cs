@@ -16,7 +16,7 @@ namespace CalculatorTests
             Calculator calculator = new Calculator();
 
             // Act
-            int actual = calculator.Add(number1, number2);
+            int actual = calculator.AddNumbers(number1, number2);
 
 
             // Assert
